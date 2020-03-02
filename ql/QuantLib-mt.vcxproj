@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E58EEACF-7487-361C-8C50-2E1960E56874}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>QuantLib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QuantLib-mt.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QuantLib-mt-gd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QuantLib-mt.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QuantLib-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">QuantLib-mt.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">QuantLib-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">QuantLib-mt.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">QuantLib-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Dmitry/source/repos/QuantLib/ql/CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Dmitry\source\repos\QuantLib\ql\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflow.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\averagebmacoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\capflooredcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\capflooredinflationcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\cashflows.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\cashflowvectors.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\cmscoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\conundrumpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\coupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\couponpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\cpicoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\cpicouponpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\digitalcmscoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\digitalcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\digitaliborcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\dividend.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\duration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\fixedratecoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\floatingratecoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\iborcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\indexedcashflow.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\inflationcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\inflationcouponpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\lineartsrpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\overnightindexedcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\rangeaccrual.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\replication.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\simplecashflow.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\timebasket.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\cashflows\yoyinflationcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\africa.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\america.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\asia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\crypto.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\europe.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\exchangeratemanager.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currencies\oceania.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\currency.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\discretizedasset.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\errors.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\event.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\exchangerate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\exercise.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\amortizingbonds\amortizingcmsratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\amortizingbonds\amortizingfixedratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\amortizingbonds\amortizingfloatingratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\averageois\arithmeticaverageois.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\averageois\arithmeticoisratehelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\averageois\averageoiscouponpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\averageois\makearithmeticaverageois.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\analyticdoublebarrierbinaryengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\analyticdoublebarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\discretizeddoublebarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\doublebarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\doublebarriertype.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\perturbativebarrieroptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\quantodoublebarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\vannavolgabarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\barrieroption\wulinyongdoublebarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\basismodels\swaptioncfs.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\basismodels\tenoroptionletvts.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\basismodels\tenorswaptionvts.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\callablebonds\blackcallablebondengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\callablebonds\callablebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\callablebonds\callablebondconstantvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\callablebonds\callablebondvolstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\callablebonds\discretizedcallablefixedratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\callablebonds\treecallablebondengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\catbonds\catbond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\catbonds\catrisk.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\catbonds\montecarlocatbondengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\catbonds\riskynotional.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commodity.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commoditycashflow.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commoditycurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commodityindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commoditypricinghelpers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commoditysettings.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commoditytype.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\commodityunitcost.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\dateinterval.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\energybasisswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\energycommodity.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\energyfuture.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\energyswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\energyvanillaswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\paymentterm.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\quantity.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\unitofmeasure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\unitofmeasureconversion.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\commodities\unitofmeasureconversionmanager.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\convertiblebonds\convertiblebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\convertiblebonds\discretizedconvertible.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\cmsspreadcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\digitalcmsspreadcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\lognormalcmsspreadpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\proxyibor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\quantocouponpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\strippedcapflooredcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\subperiodcoupons.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\coupons\swapspreadindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\basecorrelationstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\basket.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\blackcdsoptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\cdo.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\cdsoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\correlationstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\defaultevent.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\defaultprobabilitykey.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\defaulttype.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\distribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\gaussianlhplossmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\integralcdoengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\integralntdengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\issuer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\lossdistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\midpointcdoengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\nthtodefault.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\onefactorcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\onefactorgaussiancopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\onefactorstudentcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\pool.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\randomdefaultmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\recoveryratemodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\recoveryratequote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\riskyassetswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\riskyassetswapoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\riskybond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\credit\syntheticcdo.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticamericanmargrabeengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticcomplexchooserengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticcompoundoptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticeuropeanmargrabeengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticholderextensibleoptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticpartialtimebarrieroptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticpdfhestonengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticsimplechooserengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analytictwoassetbarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analytictwoassetcorrelationengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\analyticwriterextensibleoptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\complexchooseroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\compoundoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\continuousarithmeticasianlevyengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\continuousarithmeticasianvecerengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\everestoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\himalayaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\holderextensibleoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\kirkspreadoptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\margrabeoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\mceverestengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\mchimalayaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\mcpagodaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\pagodaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\partialtimebarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\simplechooseroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\twoassetbarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\twoassetcorrelationoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\exoticoptions\writerextensibleoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\dynprogvppintrinsicvalueengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdextoujumpvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdhestondoublebarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdklugeextouspreadengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmblackscholesfwdop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmdupire1dop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmextendedornsteinuhlenbeckop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmextoujumpop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmextoujumpsolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmhestonfwdop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmhestongreensfct.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmklugeextouop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmsquarerootfwdop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmvppstartlimitstepcondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmvppstepcondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmvppstepconditionfactory.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdmzabrop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdornsteinuhlenbeckvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdsimpleextoujumpswingengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdsimpleextoustorageengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\fdsimpleklugeextouvppengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\glued1dmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\finitedifferences\vanillavppoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\futures\overnightindexfuture.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\futures\overnightindexfutureratehelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\fx\blackdeltacalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\fx\deltavolquote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\inflation\cpicapfloorengines.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\inflation\cpicapfloortermpricesurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\inflation\yoycapfloortermpricesurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\inflation\yoyoptionlethelpers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\lattices\extendedbinomialtree.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\convolvedstudentt.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\expm.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\fireflyalgorithm.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\gaussiancopulapolicy.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\gaussiannoncentralchisquaredpolynomial.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\multidimintegrator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\multidimquadrature.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\particleswarmoptimization.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\piecewiseintegral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\tcopulapolicy.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\math\zigguratrng.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\mcbasket\adaptedpathpayoff.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\mcbasket\longstaffschwartzmultipathpricer.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\mcbasket\mcpathbasketengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\mcbasket\pathmultiassetoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\models\hestonslvfdmmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\models\hestonslvmcmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\models\normalclvmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\models\squarerootclvmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\extendedblackscholesprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\extendedornsteinuhlenbeckprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\extouwithjumpsprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\gemanroncoroniprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\hestonslvprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\klugeextouprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\processes\vegastressedblackscholesprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\risk\creditriskplus.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\risk\sensitivityanalysis.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\shortrate\generalizedhullwhite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\shortrate\generalizedornsteinuhlenbeckprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\swaptions\haganirregularswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\swaptions\irregularswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\swaptions\irregularswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\variancegamma\analyticvariancegammaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\variancegamma\fftengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\variancegamma\fftvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\variancegamma\fftvariancegammaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\variancegamma\variancegammamodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\variancegamma\variancegammaprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\varianceoption\integralhestonvarianceoptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\varianceoption\varianceoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\abcdatmvolcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\blackatmvolcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\blackvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\equityfxvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\extendedblackvariancecurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\extendedblackvariancesurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\interestratevolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\noarbsabr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\noarbsabrabsprobs.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\noarbsabrinterpolatedsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\noarbsabrsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\sabrvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\sviinterpolatedsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\svismilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\volcube.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\experimental\volatility\zabr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\index.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\bmaindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\bibor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\eonia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\euribor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\eurlibor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\fedfunds.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\libor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\shibor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\sofr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\ibor\sonia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\iborindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\indexmanager.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\inflationindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\interestrateindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\region.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swap\chfliborswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swap\euriborswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swap\eurliborswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swap\gbpliborswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swap\jpyliborswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swap\usdliborswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\indexes\swapindex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\asianoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\assetswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\averagetype.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\barrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\barriertype.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\basketoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bmaswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bonds\btp.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bonds\cmsratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bonds\cpibond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bonds\fixedratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bonds\floatingratebond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\bonds\zerocouponbond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\capfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\claim.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\cliquetoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\compositeinstrument.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\cpicapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\cpiswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\creditdefaultswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\dividendbarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\dividendvanillaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\europeanoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\fixedratebondforward.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\floatfloatswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\floatfloatswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\forward.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\forwardrateagreement.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\forwardvanillaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\futures.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\impliedvolatility.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\inflationcapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\lookbackoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makecapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makecds.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makecms.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makeois.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makeswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makevanillaswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\makeyoyinflationcapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\multiassetoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\nonstandardswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\nonstandardswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\oneassetoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\overnightindexedswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\payoffs.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\quantobarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\quantoforwardvanillaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\quantovanillaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\stickyratchet.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\stock.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\swap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\swaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\vanillaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\vanillaswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\vanillaswingoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\varianceswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\yearonyearinflationswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\instruments\zerocouponinflationswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\interestrate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lfmcovarparam.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lfmcovarproxy.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lfmhullwhiteparam.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lfmprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lfmswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\liborforwardmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmcorrmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmexpcorrmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmextlinexpvolmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmfixedvolmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmlinexpcorrmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmlinexpvolmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\legacy\libormarketmodels\lmvolmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\abcdmathfunction.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\bernsteinpolynomial.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\beta.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\bspline.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\alimikhailhaqcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\claytoncopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\farliegumbelmorgensterncopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\frankcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\galamboscopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\gaussiancopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\gumbelcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\huslerreisscopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\independentcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\marshallolkincopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\maxcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\mincopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\copulas\plackettcopula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\distributions\bivariatenormaldistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\distributions\bivariatestudenttdistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\distributions\chisquaredistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\distributions\gammadistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\distributions\normaldistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\distributions\studenttdistribution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\errorfunction.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\factorial.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\incompletegamma.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\discreteintegrals.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\filonintegral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\gaussianorthogonalpolynomial.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\gaussianquadratures.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\gausslobattointegral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\integral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\kronrodintegral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\integrals\segmentintegral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrix.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\basisincompleteordered.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\bicgstab.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\choleskydecomposition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\factorreduction.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\getcovariance.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\gmres.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\pseudosqrt.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\qrdecomposition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\sparseilupreconditioner.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\svd.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\symmetricschurdecomposition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\tapcorrelations.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\matrixutilities\tqreigendecomposition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\modifiedbessel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\armijo.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\bfgs.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\conjugategradient.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\constraint.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\differentialevolution.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\endcriteria.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\goldstein.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\leastsquare.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\levenbergmarquardt.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\linesearch.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\linesearchbasedmethod.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\lmdif.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\projectedcostfunction.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\projection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\simplex.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\spherecylinder.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\optimization\steepestdescent.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\pascaltriangle.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\polynomialmathfunction.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\primenumbers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\quadratic.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\faurersg.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\haltonrsg.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\knuthuniformrng.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\latticersg.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\latticerules.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\lecuyeruniformrng.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\mt19937uniformrng.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\primitivepolynomials.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\seedgenerator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\sobolbrownianbridgersg.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\sobolrsg.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\randomnumbers\stochasticcollocationinvcdf.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\richardsonextrapolation.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\rounding.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\sampledcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\statistics\discrepancystatistics.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\statistics\generalstatistics.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\statistics\histogram.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\math\statistics\incrementalstatistics.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\boundarycondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\bsmoperator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\concentrating1dmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\exponentialjump1dmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\fdmblackscholesmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\fdmblackscholesmultistrikemesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\fdmcev1dmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\fdmhestonvariancemesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\fdmmeshercomposite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\fdmsimpleprocess1dmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\meshers\uniformgridmesher.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdm2dblackscholesop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmbatesop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmblackscholesop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmcevop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmg2op.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmhestonhullwhiteop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmhestonop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmhullwhiteop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmlinearoplayout.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmlocalvolfwdop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmornsteinuhlenbeckop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\fdmsabrop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\firstderivativeop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\ninepointlinearop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\nthorderderivativeop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\numericaldifferentiation.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\secondderivativeop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\secondordermixedderivativeop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\operators\triplebandlinearop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\craigsneydscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\cranknicolsonscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\douglasscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\expliciteulerscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\hundsdorferscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\impliciteulerscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\methodoflinesscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\schemes\modifiedcraigsneydscheme.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdm1dimsolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdm2dblackscholessolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdm2dimsolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdm3dimsolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmbackwardsolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmbatessolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmblackscholessolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmg2solver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmhestonhullwhitesolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmhestonsolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmhullwhitesolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\solvers\fdmsimple2dbssolver.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmamericanstepcondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmarithmeticaveragecondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmbermudanstepcondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmsimplestoragecondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmsimpleswingcondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmsnapshotcondition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\stepconditions\fdmstepconditioncomposite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\tridiagonaloperator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\bsmrndcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\cevrndcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmaffinemodelswapinnervalue.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmaffinemodeltermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmdirichletboundary.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmdiscountdirichletboundary.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmdividendhandler.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmindicesonboundary.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdminnervaluecalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmmesherintegral.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmquantohelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\fdmtimedepdirichletboundary.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\gbsmrndcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\hestonrndcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\localvolrndcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\riskneutraldensitycalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\finitedifferences\utilities\squarerootprocessrndcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\lattices\binomialtree.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\lattices\trinomialtree.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\montecarlo\brownianbridge.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\montecarlo\genericlsregression.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\montecarlo\lsmbasissystem.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\methods\montecarlo\parametricexercise.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\calibrationhelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\equity\batesmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\equity\gjrgarchmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\equity\hestonmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\equity\hestonmodelhelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\equity\piecewisetimedependenthestonmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\accountingengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\browniangenerators\mtbrowniangenerator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\browniangenerators\sobolbrowniangenerator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\bermudanswaptionexercisevalue.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\collectnodedata.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\lsstrategy.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\nothingexercisevalue.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\parametricexerciseadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\swapbasissystem.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\swapforwardbasissystem.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\swapratetrigger.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\triggeredswapexercise.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\callability\upperboundengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\correlations\cotswapfromfwdcorrelation.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\correlations\expcorrelations.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\correlations\timehomogeneousforwardcorrelation.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\curvestate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\curvestates\cmswapcurvestate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\curvestates\coterminalswapcurvestate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\curvestates\lmmcurvestate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\discounter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\driftcomputation\cmsmmdriftcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\driftcomputation\lmmdriftcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\driftcomputation\lmmnormaldriftcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\driftcomputation\smmdriftcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolutiondescription.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalcmswapratepc.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalcotswapratepc.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalfwdrateballand.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalfwdrateeuler.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalfwdrateeulerconstrained.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalfwdrateiballand.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalfwdrateipc.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\lognormalfwdratepc.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\marketmodelvolprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\normalfwdratepc.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\svddfwdratepc.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\evolvers\volprocesses\squarerootandersen.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\forwardforwardmappings.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\historicalratesanalysis.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\marketmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\marketmodeldifferences.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\abcdvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\alphafinder.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\alphaformconcrete.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\capletcoterminalalphacalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\capletcoterminalmaxhomogeneity.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\capletcoterminalperiodic.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\capletcoterminalswaptioncalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\cotswaptofwdadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\ctsmmcapletcalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\flatvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\fwdperiodadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\fwdtocotswapadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\piecewiseconstantabcdvariance.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\piecewiseconstantvariance.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\pseudorootfacade.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\volatilityinterpolationspecifier.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\models\volatilityinterpolationspecifierabcd.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\pathwiseaccountingengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\pathwisediscounter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\pathwisegreeks\bumpinstrumentjacobian.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\pathwisegreeks\ratepseudorootjacobian.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\pathwisegreeks\swaptionpseudojacobian.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\pathwisegreeks\vegabumpcluster.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\compositeproduct.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multiproductcomposite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multiproductmultistep.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multiproductonestep.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\callspecifiedmultiproduct.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\cashrebate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\exerciseadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepcoinitialswaps.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepcoterminalswaps.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepcoterminalswaptions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepforwards.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepinversefloater.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepnothing.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepoptionlets.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multisteppathwisewrapper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepperiodcapletswaptions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepratchet.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multistepswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\multistep\multisteptarn.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\onestep\onestepcoinitialswaps.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\onestep\onestepcoterminalswaps.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\onestep\onestepforwards.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\onestep\onestepoptionlets.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\pathwise\pathwiseproductcallspecified.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\pathwise\pathwiseproductcaplet.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\pathwise\pathwiseproductcashrebate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\pathwise\pathwiseproductinversefloater.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\pathwise\pathwiseproductswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\pathwise\pathwiseproductswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\products\singleproductcomposite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\proxygreekengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\swapforwardmappings.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\marketmodels\utilities.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\model.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\calibrationhelpers\caphelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\calibrationhelpers\swaptionhelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\blackkarasinski.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\coxingersollross.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\extendedcoxingersollross.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\gaussian1dmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\gsr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\hullwhite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\markovfunctional.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\onefactormodels\vasicek.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\twofactormodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\shortrate\twofactormodels\g2.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\volatility\constantestimator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\models\volatility\garch.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\money.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\patterns\observable.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\position.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\prices.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\americanpayoffatexpiry.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\americanpayoffathit.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\analytic_cont_geom_av_price.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\analytic_discr_geom_av_price.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\analytic_discr_geom_av_strike.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\fdblackscholesasianengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\mc_discr_arith_av_price.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\mc_discr_arith_av_strike.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\asian\mc_discr_geom_av_price.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\analyticbarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\analyticbinarybarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\discretizedbarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\fdblackscholesbarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\fdblackscholesrebateengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\fdhestonbarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\fdhestonrebateengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\barrier\mcbarrierengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\basket\fd2dblackscholesvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\basket\kirkengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\basket\mcamericanbasketengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\basket\mceuropeanbasketengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\basket\stulzengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\blackcalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\blackformula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\blackscholescalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\bond\bondfunctions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\bond\discountingbondengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\analyticcapfloorengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\bacheliercapfloorengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\blackcapfloorengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\discretizedcapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\gaussian1dcapfloorengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\mchullwhiteengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\capfloor\treecapfloorengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\cliquet\analyticcliquetengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\cliquet\analyticperformanceengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\cliquet\mcperformanceengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\credit\integralcdsengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\credit\isdacdsengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\credit\midpointcdsengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\greeks.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\inflation\inflationcapfloorengines.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\lookback\analyticcontinuousfixedlookback.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\lookback\analyticcontinuousfloatinglookback.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\lookback\analyticcontinuouspartialfixedlookback.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\lookback\analyticcontinuouspartialfloatinglookback.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swap\cvaswapengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swap\discountingswapengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swap\discretizedswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swap\treeswapengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\basketgeneratingengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\blackswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\discretizedswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\fdg2swaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\fdhullwhiteswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\gaussian1dfloatfloatswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\gaussian1djamshidianswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\gaussian1dnonstandardswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\gaussian1dswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\jamshidianswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\swaption\treeswaptionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticbsmhullwhiteengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticcevengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticdigitalamericanengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticdividendeuropeanengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticeuropeanengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticgjrgarchengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analytich1hwengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analytichestonengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analytichestonhullwhiteengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\analyticptdhestonengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\baroneadesiwhaleyengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\batesengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\bjerksundstenslandengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\coshestonengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\discretizedvanillaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdbatesvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdblackscholesvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdcevvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdhestonhullwhitevanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdhestonvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdsabrvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdsimplebsswingengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\fdvanillaengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\hestonexpansionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\integralengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\jumpdiffusionengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\juquadraticengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\mcamericanengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\mcdigitalengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\pricingengines\vanilla\mchestonhullwhiteengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\batesprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\blackscholesprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\endeulerdiscretization.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\eulerdiscretization.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\forwardmeasureprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\g2process.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\geometricbrownianprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\gjrgarchprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\gsrprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\gsrprocesscore.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\hestonprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\hullwhiteprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\hybridhestonhullwhiteprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\jointstochasticprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\merton76process.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\mfstateprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\ornsteinuhlenbeckprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\squarerootprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\processes\stochasticprocessarray.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\quotes\eurodollarfuturesquote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\quotes\forwardswapquote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\quotes\forwardvaluequote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\quotes\futuresconvadjustmentquote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\quotes\impliedstddevquote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\quotes\lastfixingquote.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\rebatedexercise.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\settings.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\stochasticprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\credit\defaultdensitystructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\credit\defaultprobabilityhelpers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\credit\flathazardrate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\credit\hazardratestructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\credit\survivalprobabilitystructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\defaulttermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\inflation\inflationhelpers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\inflation\seasonality.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\inflationtermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\abcd.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\abcdcalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\atmadjustedsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\atmsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\capfloor\capfloortermvolatilitystructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\capfloor\capfloortermvolcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\capfloor\capfloortermvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\capfloor\constantcapfloortermvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\andreasenhugelocalvoladapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\andreasenhugevolatilityadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\andreasenhugevolatilityinterpl.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\blackvariancecurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\blackvariancesurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\blackvoltermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\fixedlocalvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\gridmodellocalvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\hestonblackvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\localvolsurface.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\equityfx\localvoltermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\flatsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\gaussian1dsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\inflation\constantcpivolatility.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\inflation\cpivolatilitystructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\inflation\yoyinflationoptionletvolatilitystructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\kahalesmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\constantoptionletvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\optionletstripper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\optionletstripper1.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\optionletstripper2.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\optionletvolatilitystructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\spreadedoptionletvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\strippedoptionlet.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\optionlet\strippedoptionletadapter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\sabr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\sabrinterpolatedsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\sabrsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\smilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\smilesectionutils.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\spreadedsmilesection.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\cmsmarket.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\cmsmarketcalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\gaussian1dswaptionvolatility.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\spreadedswaptionvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\swaptionconstantvol.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\swaptionvolcube.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\swaptionvolcube2.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\swaptionvoldiscrete.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\swaptionvolmatrix.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\volatility\swaption\swaptionvolstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\voltermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\bondhelpers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\fittedbonddiscountcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\flatforward.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\forwardstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\nonlinearfittingmethods.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\oisratehelper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\ratehelpers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yield\zeroyieldstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\termstructures\yieldtermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\asx.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\businessdayconvention.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendar.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\argentina.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\australia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\austria.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\bespokecalendar.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\botswana.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\brazil.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\canada.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\china.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\czechrepublic.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\denmark.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\finland.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\france.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\germany.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\hongkong.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\hungary.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\iceland.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\india.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\indonesia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\israel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\italy.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\japan.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\jointcalendar.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\mexico.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\newzealand.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\norway.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\poland.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\romania.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\russia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\saudiarabia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\singapore.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\slovakia.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\southafrica.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\southkorea.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\sweden.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\switzerland.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\taiwan.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\target.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\thailand.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\turkey.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\ukraine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\unitedkingdom.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\unitedstates.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\calendars\weekendsonly.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\date.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\dategenerationrule.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\daycounters\actual365fixed.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\daycounters\actualactual.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\daycounters\business252.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\daycounters\simpledaycounter.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\daycounters\thirty360.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\ecb.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\frequency.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\imm.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\period.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\schedule.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\timeunit.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\time\weekday.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\timegrid.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\utilities\dataformatters.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\utilities\dataparsers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\utilities\tracing.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\ql\version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Dmitry\source\repos\QuantLib\ZERO_CHECK.vcxproj">
+      <Project>{6246D356-F10F-365A-B741-84C8B877E574}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

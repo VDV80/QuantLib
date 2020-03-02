@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C75428F0-55C9-32EB-B490-DA1EDE89F08A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>testsuite</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">quantlib-test-suite.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">quantlib-test-suite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">quantlib-test-suite.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">quantlib-test-suite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">quantlib-test-suite.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">quantlib-test-suite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">quantlib-test-suite.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">quantlib-test-suite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ql\Debug\QuantLib-mt-gd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Dmitry/source/repos/QuantLib/test-suite/Debug/quantlib-test-suite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Dmitry/source/repos/QuantLib/test-suite/Debug/quantlib-test-suite.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ql\Release\QuantLib-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Dmitry/source/repos/QuantLib/test-suite/Release/quantlib-test-suite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Dmitry/source/repos/QuantLib/test-suite/Release/quantlib-test-suite.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ql\MinSizeRel\QuantLib-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Dmitry/source/repos/QuantLib/test-suite/MinSizeRel/quantlib-test-suite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Dmitry/source/repos/QuantLib/test-suite/MinSizeRel/quantlib-test-suite.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dmitry\source\repos\QuantLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ql\RelWithDebInfo\QuantLib-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Dmitry/source/repos/QuantLib/test-suite/RelWithDebInfo/quantlib-test-suite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Dmitry/source/repos/QuantLib/test-suite/RelWithDebInfo/quantlib-test-suite.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dmitry/source/repos/QuantLib -BC:/Users/Dmitry/source/repos/QuantLib --check-stamp-file C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Dmitry/source/repos/QuantLib/test-suite/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Dmitry\source\repos\QuantLib\test-suite\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\americanoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\amortizingbond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\andreasenhugevolatilityinterpl.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\array.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\asianoptions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\assetswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\autocovariances.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\barrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\basismodels.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\basketoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\batesmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\bermudanswaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\binaryoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\blackdeltacalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\blackformula.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\bonds.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\brownianbridge.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\businessdayconventions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\calendars.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\capfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\capflooredcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\cashflows.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\catbonds.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\cdo.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\cdsoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\chooseroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\cliquetoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\cms.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\cmsspread.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\commodityunitofmeasure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\compiledboostversion.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\compoundoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\convertiblebonds.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\covariance.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\creditdefaultswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\creditriskplus.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\curvestates.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\dates.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\daycounters.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\defaultprobabilitycurves.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\digitalcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\digitaloption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\distributions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\dividendoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\doublebarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\doublebinaryoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\europeanoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\everestoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\exchangerate.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\extendedtrees.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\extensibleoptions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\fastfouriertransform.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\fdcev.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\fdheston.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\fdmlinearop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\fdsabr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\fittedbonddiscountcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\forwardoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\forwardrateagreement.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\functions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\garch.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\gaussianquadratures.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\gjrgarchmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\gsr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\hestonmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\hestonslvmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\himalayaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\hybridhestonhullwhiteprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflation.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflationcapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflationcapflooredcoupon.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflationcpibond.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflationcpicapfloor.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflationcpiswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\inflationvolatility.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\instruments.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\integrals.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\interestrates.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\interpolations.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\jumpdiffusion.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\lazyobject.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\libormarketmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\libormarketmodelprocess.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\linearleastsquaresregression.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\lookbackoptions.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\lowdiscrepancysequences.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\main.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\margrabeoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\marketmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\marketmodel_cms.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\marketmodel_smm.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\marketmodel_smmcapletalphacalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\marketmodel_smmcapletcalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\marketmodel_smmcaplethomocalibration.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\markovfunctional.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\matrices.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\mclongstaffschwartzengine.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\mersennetwister.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\money.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\noarbsabr.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\normalclvmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\nthorderderivativeop.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\nthtodefault.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\numericaldifferentiation.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\observable.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\ode.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\operators.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\optimizers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\optionletstripper.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\overnightindexedswap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\pagodaoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\partialtimebarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\pathgenerator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\period.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\piecewiseyieldcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\piecewisezerospreadedtermstructure.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\quantlibtestsuite.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\quantooption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\quotes.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\rangeaccrual.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\riskneutraldensitycalculator.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\riskstats.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\rngtraits.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\rounding.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\sampledcurve.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\schedule.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\shortratemodels.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\sofrfutures.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\solvers.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\spreadoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\squarerootclvmodel.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\stats.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\swap.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\swapforwardmappings.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\swaption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\swaptionvolatilitycube.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\swaptionvolatilitymatrix.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\swingoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\termstructures.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\timegrid.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\timeseries.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\tqreigendecomposition.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\tracing.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\transformedgrid.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\twoassetbarrieroption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\twoassetcorrelationoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\utilities.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\variancegamma.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\varianceoption.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\varianceswaps.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\volatilitymodels.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\vpp.cpp" />
+    <ClCompile Include="C:\Users\Dmitry\source\repos\QuantLib\test-suite\zabr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Dmitry\source\repos\QuantLib\ZERO_CHECK.vcxproj">
+      <Project>{6246D356-F10F-365A-B741-84C8B877E574}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dmitry\source\repos\QuantLib\ql\QuantLib-mt.vcxproj">
+      <Project>{E58EEACF-7487-361C-8C50-2E1960E56874}</Project>
+      <Name>QuantLib-mt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

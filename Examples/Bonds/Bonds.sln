@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bonds", "Bonds.vcxproj", "{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		MinSizeRel|x86 = MinSizeRel|x86
+		Release|x86 = Release|x86
+		RelWithDebInfo|x86 = RelWithDebInfo|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.Debug|x86.Build.0 = Debug|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.MinSizeRel|x86.ActiveCfg = MinSizeRel|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.MinSizeRel|x86.Build.0 = MinSizeRel|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.Release|x86.ActiveCfg = Release|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.Release|x86.Build.0 = Release|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|Win32
+		{5E7E26B5-B991-30EC-BD8E-6CDD206E1A98}.RelWithDebInfo|x86.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FA6B09E-B365-486D-B8DF-35A299FC45AA}
+	EndGlobalSection
+EndGlobal
